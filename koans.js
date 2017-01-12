@@ -6,11 +6,11 @@ const __ = undefined
  */
 
 test('What will satisfy the truthy assertion?', t => {
-  t.truthy(true)
+  t.truthy(1)
 })
 
 test('What is a falsey value?', t => {
-  t.falsy(false)
+  t.falsy(0)
 })
 
 test('What is true?', t => {
@@ -80,7 +80,7 @@ test('What is equality with type coercion?', t => {
   const quotedNumber = '3'
 
   // eslint-disable-next-line eqeqeq
-  t.true(quotedNumber == 3)
+  t.true(quotedNumber == '3')
 })
 
 /**
